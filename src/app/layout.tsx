@@ -41,16 +41,16 @@ export default function RootLayout({
       >
         <header className="border-b border-slate-200">
           <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
-            <Link href="/" className="flex items-center gap-2">
+            <Link href="/" className="flex items-center gap-3">
               <Image
                 src="/images/logo.webp"
                 alt="Tree Service Champs"
-                width={40}
-                height={40}
-                className="h-10 w-10"
+                width={56}
+                height={56}
+                className="h-14 w-14"
                 priority
               />
-              <span className="text-xl font-bold text-forest-green">{COMPANY.name}</span>
+              <span className="text-2xl font-bold text-forest-green">{COMPANY.name}</span>
             </Link>
             <nav className="hidden gap-6 text-sm font-medium md:flex">
               <Link href="/">Home</Link>
