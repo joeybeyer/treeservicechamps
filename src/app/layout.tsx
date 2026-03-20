@@ -40,14 +40,14 @@ export default function RootLayout({
         ].join(" ")}
       >
         <header className="border-b border-slate-200">
-          <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
+          <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
             <Link href="/" className="flex items-center gap-3">
               <Image
                 src="/images/logo.webp"
                 alt="Tree Service Champs"
-                width={56}
-                height={56}
-                className="h-14 w-14"
+                width={80}
+                height={80}
+                className="h-20 w-20"
                 priority
               />
               <span className="text-2xl font-bold text-forest-green">{COMPANY.name}</span>
