@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import Image from "next/image";
 import "./globals.css";
 import Link from "next/link";
 import { COMPANY } from "@/data/company";
@@ -40,8 +41,16 @@ export default function RootLayout({
       >
         <header className="border-b border-slate-200">
           <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
-            <Link href="/" className="text-xl font-bold text-forest-green">
-              {COMPANY.name}
+            <Link href="/" className="flex items-center gap-2">
+              <Image
+                src="/images/logo.webp"
+                alt="Tree Service Champs"
+                width={40}
+                height={40}
+                className="h-10 w-10"
+                priority
+              />
+              <span className="text-xl font-bold text-forest-green">{COMPANY.name}</span>
             </Link>
             <nav className="hidden gap-6 text-sm font-medium md:flex">
               <Link href="/">Home</Link>

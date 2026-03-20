@@ -157,27 +157,35 @@ export default function HomePage() {
             {
               title: "Tree Removal",
               desc: "Complete removal for hazardous, dead, or unwanted trees. Prices $200-$2,000 (avg $750).",
+              image: "/images/tree-removal.webp",
             },
             {
               title: "Tree Trimming",
               desc: "Trim for clearance, health, and curb appeal. Typical pricing $270-$1,800.",
+              image: "/images/tree-trimming.webp",
             },
             {
               title: "Stump Grinding",
               desc: "Stumps ground below grade so you can replant or landscape. $150-$300.",
+              image: "/images/stump-grinding.webp",
             },
             {
               title: "Emergency Storm Cleanup",
               desc: "Fast response for fallen trees and blocked access after storms.",
+              image: "/images/emergency.webp",
             },
             {
               title: "Lot & Brush Clearing",
               desc: "Clear lots for build-ready land with haul-away included.",
+              image: "/images/lot-clearing.webp",
             },
           ].map((service) => (
-            <div key={service.title} className="rounded-2xl border border-slate-200 p-6 shadow-sm">
-              <h3 className="text-lg font-semibold text-forest-green">{service.title}</h3>
-              <p className="mt-2 text-sm text-slate-600">{service.desc}</p>
+            <div key={service.title} className="rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+              <img src={service.image} alt={service.title} className="w-full h-40 object-cover" loading="lazy" />
+              <div className="p-6">
+                <h3 className="text-lg font-semibold text-forest-green">{service.title}</h3>
+                <p className="mt-2 text-sm text-slate-600">{service.desc}</p>
+              </div>
             </div>
           ))}
         </div>
